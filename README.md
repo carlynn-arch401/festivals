@@ -12,13 +12,14 @@
 <center><p>Lore At<strong> HEART</strong></p></center>
 <center> <a href="index1.html"><Input type="button" value="Explore"/></a></center>
 </div>
+  
 <style>
   *{
   margin: 0;
   padding: 0;
   }
 body{
-    background-image: url(moriones-festival.jpg);
+    background-image: url(./moriones-festival.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0%;
