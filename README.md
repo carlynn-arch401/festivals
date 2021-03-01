@@ -19,7 +19,7 @@
   padding: 0;
   }
 body{
-    background-image: url(../moriones-festival.jpg);
+    background-image: url(.\moriones-festival.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0%;
