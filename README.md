@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<html> 
 <html lang="en"> 
   
 <head>
@@ -11,8 +11,12 @@
     <div class="asd">
 <center><p>Lore At<strong> HEART</strong></p></center>
 <center> <a href="index1.html"><Input type="button" value="Explore"/></a></center>
-</body> </div>
+</div>
 <style>
+  *{
+  margin: 0;
+  padding: 0;
+  }
 body{
     background-image: url(moriones-festival.jpg);
     background-size: cover;
@@ -50,6 +54,6 @@ input{
     border-radius: 20px;
 }
 @media(max-width: 952px
-
 </style>
+</body>
 </html>
