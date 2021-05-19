@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+<title>Lore At Heart</title>
+</head>
+<body >
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="box">
+            <div class="square" style="--i:0;"></div>
+            <div class="square" style="--i:1;"></div>
+            <div class="square" style="--i:2;"></div>
+            <div class="square" style="--i:3;"></div>
+            <div class="square" style="--i:4;"></div>
+            
+            <div class="container">
+                <div class="form">
+                    <h1>Lore At Heart</h1>
+                        <h2>"Explore the festival in different municipalities from the center of the Philippines"</h2>
+                        <center><a href="index1.html"><Input type="button" value="Explore"></a></center>
+                </div>
+            </div>
+        </div>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            body{
+                overflow: hidden;
+            }
+            section{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height:700%;
+                background: linear-gradient(to bottom,#f1f4f9, #dff1ff);
+            }
+            section .color
+            {
+                position:absolute;
+                filter: blur(200px);
+            }
+            section .color:nth-child(1)
+            {
+            bottom: -350px;
+            width:900px;
+            height:900px;
+            background: red;
+            }
+            section .color:nth-child(2)
+            {
+            top: -150px;
+            right: 100px;
+            width:700px;
+            height:700px;
+            background: yellow;
+            }
+            section .color:nth-child(3)
+            {
+            bottom: 50px;
+            left: 100px;
+            width:800px;
+            height:800px;
+            background: blue;
+            }
+            .box
+            {
+                position:relative;
+            }
+            .box .square
+            {
+                position: absolute;
+                backdrop-filter: blur(5px);
+                box-shadow: 0 45px 65px rgba(255,255,255,0.3);
+                border: 1px solid rgba(255,255,255,0.5);
+                border-right: 1px solid rgba(255,255,255,0.6);
+                border-bottom: 1px solid rgba(255,255,255,0.6);
+                background: rgba(255,255,255,0.1);
+                border-radius: 10px;
+                animation: animate 10s linear infinite;
+                animation-delay: calc(-1s *var(--i));
+            }
+            @keyframes animate
+            {
+                0%,100%
+                {
+                    transform: translateY(-40px);
+                }
+                50%
+                {
+                    transform: translateY(40px);
+                }
+            }
+            .box .square:nth-child(1)
+            {
+                bottom:-50px;
+                right: -60px;
+                width: 140px;
+                height: 140px;
+            }
+            .box .square:nth-child(2)
+            {
+                bottom:120px;
+                left: -100px;
+                width: 120px;
+                height: 120px;
+                z-index:4;
+            }
+            .box .square:nth-child(3)
+            {
+                top:50px;
+                left: -60px;
+                width: 200px;
+                height: 200px;
+                z-index:3;
+            }
+            .box .square:nth-child(4)
+            {
+                top:150px;
+                left: -100px;
+                width: 250px;
+                height: 250px;
+            }
+            .box .square:nth-child(5)
+            {
+                top:120px;
+                right: -90px;
+                width: 150px;
+                height: 150px;
+                z-index:3;
+            }
+            .container
+            {
+                position:relative;
+                padding-top: 25px;
+                width: 900px;
+                min-height: 900px;
+                background-image: url('moriones-festival.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 20px;
+                display:flex;
+            }
+            .form{
+                align-items: center;
+            }
+            .container .form h1
+            {
+                font-family: 'Arial Narrow Bold', sans-serif;
+                margin-left: 300px;
+                color:Black;
+                text-shadow: 0 45px 45px rgba(57, 7, 116, 0.9);
+                text-underline-position: below;
+                font-size: 70px;
+                font-weight: 600px;
+                letter-spacing: 5px;
+                margin-bottom: 50px;
+                padding-top: 150px;
+            }
+            .form h2
+            {
+                font:italic;
+                position: center;
+                color:white;
+                text-shadow:0 2px 3px blue;
+                font-size: 35px;
+                margin-left: 25px;
+                font-weight: 500px;
+                letter-spacing: 1px;
+                margin-bottom: 20px;
+            }
+            .container .center .input .button
+            {
+                position:relative;
+                align-items: center;
+                top:50px;
+                margin-top:20px;
+                line-height:40px;
+                width:100px;
+                border-radius:6px;
+                padding:10px 40px;
+                font-size:14px;
+                color: black;
+                cursor:pointer;
+            }
+              </style>
+            </html>
